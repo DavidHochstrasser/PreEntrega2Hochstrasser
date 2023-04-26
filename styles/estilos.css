@@ -1,0 +1,195 @@
+@font-face {
+    font-family: caviar;
+    src: url(/fonts/CaviarDreams.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: caviar, sans-serif;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #B8621B;
+}
+
+.navbar-nav a {
+    font-size: 25px;
+    color: #E3CCAE;
+}
+
+.navbar-nav a:hover {
+    color: black;
+}
+
+.principal {
+    background-color: #262A56;
+}
+
+.recuadro {
+    border: solid 50px;
+    color: #B8621B;
+}
+
+.recuadro2 {
+    background-position: center;
+    background-size: cover;
+    border: solid 50px;
+    color: #B8621B;
+}
+
+.parrafo1 h1 {
+    font-size: 50px;
+    color: #E3CCAE;
+}
+
+.parrafo1 h2 {
+    color: #B8621B;
+}
+
+.parrafo1 p {
+    font-size: 20px;
+    color: #B8621B;
+}
+
+.piedepagina {
+    color: #B8621B;
+    font-size: 18px;
+    /* background-color: #E3CCAE;*/
+}
+
+.card {
+    background-color: #262A56;
+    border: none;
+    color: #B8621B;
+    border: solid 3px #B8621B;
+    border-radius: 15px;
+}
+
+.cont1 {
+    width: 100%;
+    background-color: #262A56;
+    display: grid;
+
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6"
+    ;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.cont1 h3 {
+    color: #B8621B;
+}
+
+.item {
+    border: 3px solid #B8621B;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.item1 {
+    background-image: url(../imagenes/img1.png);
+    grid-area: img1;
+}
+
+.item2 {
+    background-image: url(../imagenes/img2.jpg);
+    grid-area: img2;
+}
+
+.item3 {
+    background-image: url(../imagenes/img3.png);
+    grid-area: img3;
+}
+
+.item4 {
+    background-image: url(../imagenes/img4.png);
+    grid-area: img4;
+}
+
+.item5 {
+    background-image: url(../imagenes/img5.jpg);
+    grid-area: img5;
+}
+
+.item6 {
+    background-image: url(../imagenes/img6.png);
+    grid-area: img6;
+}
+
+.formulario {
+    font-family: caviar, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #B8621B;
+    background-color: #262A56;
+    padding: 20px;
+    border: 3px solid #B8621B;
+    margin: 10px auto;
+    width: auto;
+}
+
+.logoservicios {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.redessociales {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 720px) {
+    .cont1 {
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+        ;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .cont1 {
+        align-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+        ;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+
+}
