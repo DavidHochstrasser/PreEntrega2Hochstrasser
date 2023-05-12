@@ -1,0 +1,19 @@
+.navbar {
+    height: auto;
+    background-color: $ColorOrange;
+
+    .logo {
+        height: 60px;
+        width: auto;
+    }
+
+    .navbar-nav a {
+        font-size: 25px;
+        color: $ColorWhite;
+    }
+
+    .navbar-nav a:hover {
+        color: black;
+    }
+
+}

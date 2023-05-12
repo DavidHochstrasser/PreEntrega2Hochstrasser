@@ -1,0 +1,27 @@
+.formulario {
+    font-family: caviar, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: $ColorOrange;
+    background-color: $ColorBlue;
+    padding: 20px;
+    border: 3px solid $ColorOrange;
+    border-radius: 15px;
+    margin: 10px auto;
+    width: auto;
+    transition: 1.03s;
+}
+
+.formulario:hover {
+    transform: scale(1.03);
+    transition: 2s;
+}
+
+.googlemaps {
+    transition: 2s;
+}
+
+.googlemaps:hover {
+    transform: scale(1.03);
+    transition: 2s;
+}

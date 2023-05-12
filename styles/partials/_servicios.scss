@@ -1,0 +1,21 @@
+.card {
+    background-color: $ColorBlue;
+    border: none;
+    color: $ColorOrange;
+    border: solid 3px $ColorOrange;
+    border-radius: 15px;
+    transition: 1.01s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1.01s;
+    border: solid 3px #E3CCAE;
+}
+
+.logoservicios {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}

@@ -1,0 +1,61 @@
+.cont1 {
+    width: 100%;
+    background-color: $ColorBlue;
+    display: grid;
+
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6"
+    ;
+    padding: 20px;
+    grid-gap: 10px;
+
+    .cont1 h3 {
+        color: $ColorOrange;
+    }
+}
+
+.item {
+    border: 3px solid $ColorOrange;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.item1 {
+    background-image: url(../imagenes/img1.png);
+    grid-area: img1;
+}
+
+.item2 {
+    background-image: url(../imagenes/img2.jpg);
+    grid-area: img2;
+}
+
+.item3 {
+    background-image: url(../imagenes/img3.png);
+    grid-area: img3;
+}
+
+.item4 {
+    background-image: url(../imagenes/img4.png);
+    grid-area: img4;
+}
+
+.item5 {
+    background-image: url(../imagenes/img5.jpg);
+    grid-area: img5;
+}
+
+.item6 {
+    background-image: url(../imagenes/img6.png);
+    grid-area: img6;
+}

@@ -1,0 +1,13 @@
+.recuadro2 {
+    background-position: center;
+    background-size: cover;
+    border: solid 50px;
+    color: $ColorOrange;
+    border-radius: 15px;
+    transition: 1.01s;
+
+    .recuadro2:hover {
+        transform: scale(1.05);
+        transition: 1.01s;
+    }
+}

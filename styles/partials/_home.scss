@@ -1,0 +1,43 @@
+.principal {
+    background-color: $ColorBlue;
+
+    .recuadro {
+        border: solid 50px;
+        border-radius: 15px;
+        color: $ColorOrange;
+        transition: 1.01s;
+
+    }
+
+    .recuadro:hover {
+        transform: scale(1.05);
+        transition: 1.01s;
+    }
+
+    .parrafo1 h1 {
+        font-size: 50px;
+        color: $ColorWhite;
+    }
+
+    .parrafo1 h2 {
+        color: $ColorOrange;
+    }
+
+    .parrafo1 p {
+        font-size: 20px;
+        color: $ColorOrange;
+    }
+
+    .parrafo1:hover {
+        transform: scale(1.05);
+        transition: 1.01s;
+    }
+
+    .parrafo1:hover h2 {
+        transform: scale(1.05);
+        transition: 1.01s;
+        color: $ColorWhite;
+    }
+
+
+}

@@ -1,0 +1,35 @@
+@media screen and (max-width: 720px) {
+    .cont1 {
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+        ;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .cont1 {
+        align-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+        ;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+
+}
