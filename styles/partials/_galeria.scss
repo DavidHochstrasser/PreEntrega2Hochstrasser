@@ -24,12 +24,14 @@
     background-size: cover;
     background-position: center;
     border-radius: 15px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 2s;
+    }
 }
 
-.item:hover {
-    transform: scale(1.1);
-    transition: 2s;
-}
+
 
 .item1 {
     background-image: url(../imagenes/img1.png);

@@ -5,13 +5,15 @@
     border: solid 3px $ColorOrange;
     border-radius: 15px;
     transition: 1.01s;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: 1.01s;
+        border: solid 3px #E3CCAE;
+    }
 }
 
-.card:hover {
-    transform: scale(1.05);
-    transition: 1.01s;
-    border: solid 3px #E3CCAE;
-}
+
 
 .logoservicios {
     height: 100%;
