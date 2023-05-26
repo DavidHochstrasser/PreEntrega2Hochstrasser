@@ -2,19 +2,16 @@
   font-family: caviar;
   src: url(../fonts/CaviarDreams.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: caviar, sans-serif;
 }
-
 * ::-moz-selection {
   background-color: #E3CCAE;
   color: #262A56;
 }
-
 * ::selection {
   background-color: #E3CCAE;
   color: #262A56;
@@ -24,120 +21,116 @@
   height: auto;
   background-color: #B8621B;
 }
-
 .navbar .logo {
   height: 60px;
   width: auto;
 }
-
 .navbar .navbar-nav a {
   font-size: 25px;
   color: #E3CCAE;
 }
-
 .navbar .navbar-nav a:hover {
   color: black;
 }
-
 .navbar .nav-align {
   justify-content: right;
+}
+
+.navbar-nav {
+  align-items: flex-end;
 }
 
 .principal {
   background-color: #262A56;
 }
-
 .principal .recuadro {
   border: solid 50px;
   border-radius: 15px;
   color: #B8621B;
   transition: 1.01s;
 }
-
 .principal .recuadro:hover {
   transform: scale(1.05);
   transition: 1.01s;
 }
-
 .principal .parrafo1 h1 {
+  animation: swing-in-top-bck 5.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   font-size: 50px;
   color: #E3CCAE;
 }
-
 .principal .parrafo1 h2 {
   animation: bounce-in-fwd 1.9s both;
   color: #B8621B;
 }
-
 .principal .parrafo1 p {
   font-size: 20px;
   color: #B8621B;
 }
-
 .principal .parrafo1:hover {
   transform: scale(1.05);
   transition: 1.01s;
 }
-
 .principal .parrafo1:hover h2 {
   transform: scale(1.05);
   transition: 1.01s;
   color: #E3CCAE;
 }
 
+@keyframes swing-in-top-bck {
+  0% {
+    transform: rotateX(70deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
 @keyframes bounce-in-fwd {
   0% {
     transform: scale(0);
     animation-timing-function: ease-in;
     opacity: 0;
   }
-
   38% {
     transform: scale(1);
     animation-timing-function: ease-out;
     opacity: 1;
   }
-
   55% {
     transform: scale(0.7);
     animation-timing-function: ease-in;
   }
-
   72% {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
-
   81% {
     transform: scale(0.84);
     animation-timing-function: ease-in;
   }
-
   89% {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
-
   95% {
     transform: scale(0.95);
     animation-timing-function: ease-in;
   }
-
   100% {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
 }
-
 .piedepagina {
   color: #B8621B;
   font-size: 18px;
 }
-
 .piedepagina .redessociales {
   font-size: 50px;
 }
-
 .piedepagina .redessociales .fa-brands:hover {
   transform: scale(2);
   transition: 2s;
@@ -152,7 +145,6 @@
   border-radius: 15px;
   transition: 1.01s;
 }
-
 .recuadro2 .recuadro2:hover {
   transform: scale(1.05);
   transition: 1.01s;
@@ -166,7 +158,6 @@
   border-radius: 15px;
   transition: 1.01s;
 }
-
 .card:hover {
   transform: scale(1.05);
   transition: 1.01s;
@@ -202,7 +193,6 @@
   background-position: center;
   border-radius: 15px;
 }
-
 .item:hover {
   transform: scale(1.1);
   transition: 2s;
@@ -251,7 +241,6 @@
   width: auto;
   transition: 1.03s;
 }
-
 .formulario:hover {
   transform: scale(1.03);
   transition: 2s;
@@ -260,7 +249,6 @@
 .googlemaps {
   transition: 2s;
 }
-
 .googlemaps:hover {
   transform: scale(1.03);
   transition: 2s;
@@ -276,7 +264,6 @@
     grid-gap: 10px;
   }
 }
-
 @media screen and (max-width: 540px) {
   .cont1 {
     align-content: center;
@@ -286,6 +273,4 @@
     padding: 20px;
     grid-gap: 10px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
